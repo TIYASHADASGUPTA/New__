@@ -151,9 +151,9 @@
             object-fit:cover;
     }
     .about__left{
-        display:block;
-        width:100%;
-         padding:0;
+        display:none;
+        /* width:100%;
+         padding:0; */
          
 
         
@@ -163,10 +163,13 @@
     }
     .about_section{
         padding-top:0;
+        height: auto;
     }
     .about__right{
-        width:90%;
+        width:100%;
+        margin-top: 35px;
     }
+    
 }
 
 
@@ -198,7 +201,7 @@
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
+  padding-left:15px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -206,15 +209,14 @@
 }
 
 .contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+  padding-left:10px;
   font-size: 14px;
   color: #ab9d95;
 }
 
-.contact .info .email p {
+/* .contact .info .email p {
   padding-top: 5px;
-}
+} */
 
 .contact .info .social-links {
   padding-left: 60px;
@@ -359,6 +361,25 @@
   }
 }
 
+.address__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.address__header+p{
+  margin-top: 0;
+}
+.address__header p{
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+iframe{
+  overflow-y: hidden;
+  width: 100%;
+  height: 350px;
+}
+
     </style>
   </head>
   <body>
@@ -454,24 +475,32 @@
         <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="info">
             <div class="address">
-              <i class="fas fa-map-marker-alt"></i>
-              <h4>Location:</h4>
+              <div class="address__header">
+                <i class="fas fa-map-marker-alt"></i>
+              <h4>Location</h4>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, hic. Suscipit porro repudiandae est tempora, dolores aperiam alias autem adipisci. Sed voluptatem quas hic, eum omnis optio ipsum aliquam odit?</p>
             </div>
 
             <div class="email">
-              <i class="fas fa-envelope-open"></i>
+              <div class="address__header">
+                <i class="fas fa-envelope-open"></i>
               <h4>Email:</h4>
               <p>info@example.com</p>
+              </div>
+              
             </div>
 
             <div class="phone">
-              <i class="fas fa-phone-square-alt"></i>
+              <div class="address__header">
+                <i class="fas fa-phone-square-alt"></i>
               <h4>Call:</h4>
               <p>12345678909</p>
+              </div>
+             
             </div>
 
-            <iframe src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27732.35973205976!2d76.96812479999998!3d29.674975949999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1628153901308!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
         </div>
